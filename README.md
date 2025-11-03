@@ -33,7 +33,7 @@ A modern, feature-rich personal website built with React, Vite, Tailwind CSS, an
 - **Icons**: Lucide React
 - **Routing**: React Router DOM
 - **Backend**: Supabase (PostgreSQL)
-- **Deployment**: GitHub Pages compatible
+- **Deployment**: Vercel (optimized), GitHub Pages compatible
 
 ## Setup Instructions
 
@@ -82,18 +82,31 @@ For production, you should:
 2. Use Row Level Security policies
 3. Store admin emails in the `admin_users` table
 
-### 6. Deployment to GitHub Pages
+### 6. Deployment
 
-1. Update the `base` path in `vite.config.js`:
-   ```js
-   base: '/your-repo-name/',
-   ```
+#### Deploy to Vercel (Recommended)
 
-2. Build and deploy:
-   ```bash
-   npm run build
-   npm run deploy
-   ```
+This project is optimized for Vercel deployment:
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+vercel
+```
+
+Or use the Vercel Dashboard:
+1. Push your code to GitHub
+2. Import project on [vercel.com](https://vercel.com)
+3. Add environment variables (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`)
+4. Deploy!
+
+**📖 See [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for detailed instructions**
+
+#### Alternative: GitHub Pages
+
+If you prefer GitHub Pages, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
 
 ## Project Structure
 

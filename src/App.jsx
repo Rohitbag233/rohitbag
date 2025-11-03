@@ -14,7 +14,7 @@ import NotFound from './pages/NotFound'
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/rohit-site">
+      <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
