@@ -4,13 +4,15 @@
 
 @layer base {
   body {
-    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
-    @apply transition-colors duration-300;
+    background-color: #fff; /* bg-white */
+    color: #1a202c; /* text-gray-900 */
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-duration: 300ms;
   }
 
   /* Accessibility mode enhancements */
   body.accessibility-mode {
-    @apply text-lg;
+    font-size: 1.125rem; /* text-lg */
     font-size: 1.125rem !important;
     line-height: 1.8 !important;
   }
@@ -21,18 +23,20 @@
 
   body.accessibility-mode button,
   body.accessibility-mode a {
-    @apply underline;
+    text-decoration-line: underline;
     min-height: 44px;
     min-width: 44px;
   }
 
   /* High contrast mode for accessibility */
   body.accessibility-mode.dark {
-    @apply bg-black text-white;
+    background-color: #000; /* bg-black */
+    color: #fff; /* text-white */
   }
 
   body.accessibility-mode {
-    @apply bg-white text-black;
+    background-color: #fff; /* bg-white */
+    color: #000; /* text-black */
   }
 }
 
@@ -43,32 +47,46 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-gray-100 dark:bg-gray-800;
+    background-color: #f3f4f6; /* bg-gray-100 */
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+    background-color: #d1d5db; /* bg-gray-300 */
+    border-radius: 9999px; /* rounded-full */
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400 dark:bg-gray-500;
+    background-color: #9ca3af; /* bg-gray-400 */
   }
 
   /* Skip to main content link for accessibility */
   .skip-to-main {
-    @apply absolute -top-full left-0 bg-primary-600 text-white px-4 py-2 z-50;
-    @apply focus:top-0 transition-all;
+    position: absolute; /* absolute */
+    top: -9999px; /* -top-full */
+    left: 0; /* left-0 */
+    background-color: #0284c7; /* bg-primary-600 */
+    color: #fff; /* text-white */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    z-index: 50; /* z-50 */
+    transition-property: all; /* transition-all */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* transition-all */
+    transition-duration: 150ms; /* transition-all */
   }
 
   /* Smooth reveal animation */
   .reveal {
-    @apply opacity-0 translate-y-8;
+    opacity: 0; /* opacity-0 */
+    transform: translateY(2rem); /* translate-y-8 */
     animation: reveal 0.8s ease-out forwards;
   }
 
   @keyframes reveal {
     to {
-      @apply opacity-100 translate-y-0;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 
@@ -87,16 +105,24 @@
 
   /* Gradient text */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-purple-600;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #0ea5e9, #9333ea); /* from-primary-500 to-purple-600 */
   }
 
   /* Glass morphism effect */
   .glass {
-    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+    background-color: rgba(255, 255, 255, 0.1); /* bg-white/10 */
+    backdrop-filter: blur(12px); /* backdrop-blur-lg */
+    border-width: 1px; /* border */
+    border-color: rgba(255, 255, 255, 0.2); /* border-white/20 */
   }
 
   .glass-dark {
-    @apply dark:bg-gray-800/50 dark:backdrop-blur-lg dark:border-gray-700/50;
+    /* dark:bg-gray-800/50 */
+    /* dark:backdrop-blur-lg */
+    /* dark:border-gray-700/50 */
   }
 }
 
