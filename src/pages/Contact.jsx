@@ -57,22 +57,22 @@ const Contact = () => {
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      value: '@rohitbagh',
-      href: 'https://linkedin.com/in/rohitbagh',
+      value: '@rohitbag',
+      href: 'https://linkedin.com/in/rohitbag',
       description: 'Professional networking',
     },
     {
       icon: Twitter,
       title: 'Twitter',
-      value: '@rohitbagh',
-      href: 'https://twitter.com/rohitbagh',
+      value: '@rohitbag',
+      href: 'https://twitter.com/rohitbag',
       description: 'Quick updates and thoughts',
     },
     {
       icon: Github,
       title: 'GitHub',
-      value: '@rohitbagh',
-      href: 'https://github.com/rohitbagh',
+      value: '@rohitbag',
+      href: 'https://github.com/rohitbag',
       description: 'Check out my code',
     },
   ]

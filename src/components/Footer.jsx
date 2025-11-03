@@ -6,9 +6,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/rohitbagh', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/rohitbagh', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/rohitbagh', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/rohitbag', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/rohitbag', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://twitter.com/rohitbag', label: 'Twitter' },
     { icon: Mail, href: 'mailto:rohit@example.com', label: 'Email' },
   ]
 
@@ -27,7 +27,7 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-xl font-display font-bold mb-4 gradient-text">
-              Rohit Bagh
+              Rohit Bag
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               Entrepreneur, AI Innovator, and Founder building the future with AI automation. 
@@ -111,10 +111,10 @@ const Footer = () => {
         <div className="pt-8 border-t border-gray-200 dark:border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-600 dark:text-gray-400 text-sm flex items-center">
-              Made with <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" /> by Rohit Bagh
+              Made with <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" /> by Rohit Bag
             </p>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              © {currentYear} Rohit Bagh. All rights reserved.
+              © {currentYear} Rohit Bag. All rights reserved.
             </p>
           </div>
         </div>

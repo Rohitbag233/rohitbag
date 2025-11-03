@@ -216,13 +216,13 @@ INSERT INTO admin_users (email, role) VALUES ('rohit@example.com', 'admin');
 
 -- Insert initial site settings
 INSERT INTO site_settings (key, value, type, description) VALUES
-('site_title', 'Rohit Bagh', 'text', 'Website title'),
+('site_title', 'Rohit Bag', 'text', 'Website title'),
 ('site_tagline', 'Entrepreneur & AI Innovator', 'text', 'Website tagline'),
 ('hero_subtitle', 'Building the future with AI automation | Co-founder of Cooper & Reach Resolve', 'text', 'Hero section subtitle'),
 ('contact_email', 'rohit@example.com', 'text', 'Contact email'),
-('linkedin_url', 'https://linkedin.com/in/rohitbagh', 'text', 'LinkedIn profile'),
-('twitter_url', 'https://twitter.com/rohitbagh', 'text', 'Twitter profile'),
-('github_url', 'https://github.com/rohitbagh', 'text', 'GitHub profile'),
+('linkedin_url', 'https://linkedin.com/in/rohitbag', 'text', 'LinkedIn profile'),
+('twitter_url', 'https://twitter.com/rohitbag', 'text', 'Twitter profile'),
+('github_url', 'https://github.com/rohitbag', 'text', 'GitHub profile'),
 ('enable_dark_mode', 'true', 'boolean', 'Enable dark mode toggle'),
 ('enable_accessibility_mode', 'true', 'boolean', 'Enable accessibility mode'),
 ('enable_advice_museum', 'true', 'boolean', 'Enable advice museum feature'),

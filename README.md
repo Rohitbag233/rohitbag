@@ -1,4 +1,4 @@
-# Rohit Bagh - Personal Website
+# Rohit Bag - Personal Website
 
 A modern, feature-rich personal website built with React, Vite, Tailwind CSS, and Supabase.
 
@@ -209,12 +209,12 @@ MIT License - Feel free to use this template for your own website!
 
 ## Author
 
-**Rohit Bagh**
+**Rohit Bag**
 - Email: rohit@example.com
-- LinkedIn: [linkedin.com/in/rohitbagh](https://linkedin.com/in/rohitbagh)
-- Twitter: [@rohitbagh](https://twitter.com/rohitbagh)
-- GitHub: [@rohitbagh](https://github.com/rohitbagh)
+- LinkedIn: [linkedin.com/in/rohitbag](https://linkedin.com/in/rohitbag)
+- Twitter: [@rohitbag](https://twitter.com/rohitbag)
+- GitHub: [@rohitbag](https://github.com/rohitbag)
 
 ---
 
-Built with ❤️ by Rohit Bagh
+Built with ❤️ by Rohit Bag
