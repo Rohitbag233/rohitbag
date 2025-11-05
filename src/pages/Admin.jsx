@@ -71,7 +71,7 @@ const Admin = () => {
               </div>
               <div>
                 <h2 className="font-display font-bold text-lg">Admin Panel</h2>
-                <p className="text-xs text-gray-500 dark:text-gray-400">Rohit Bagh</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Rohit Bag</p>
               </div>
             </Link>
           </div>

@@ -43,9 +43,9 @@ const Header = () => {
           <Link 
             to="/" 
             className="text-2xl font-display font-bold gradient-text"
-            aria-label="Rohit Bagh - Home"
+            aria-label="Rohit Bag - Home"
           >
-            Rohit Bagh
+            Rohit Bag
           </Link>
 
           {/* Desktop Navigation */}
