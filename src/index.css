@@ -23,34 +23,7 @@
     color: #ffffff; /* text-dark-foreground */
   }
 
-  /* Accessibility mode enhancements */
-  body.accessibility-mode {
-    font-size: 1.125rem; /* text-lg */
-    font-size: 1.125rem !important;
-    line-height: 1.8 !important;
-  }
 
-  body.accessibility-mode * {
-    letter-spacing: 0.05em !important;
-  }
-
-  body.accessibility-mode button,
-  body.accessibility-mode a {
-    text-decoration-line: underline;
-    min-height: 44px;
-    min-width: 44px;
-  }
-
-  /* High contrast mode for accessibility */
-  body.accessibility-mode.dark {
-    background-color: #000; /* bg-black */
-    color: #fff; /* text-white */
-  }
-
-  body.accessibility-mode {
-    background-color: #fff; /* bg-white */
-    color: #000; /* text-black */
-  }
 }
 
 @layer components {

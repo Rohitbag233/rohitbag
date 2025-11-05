@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Sun, Moon, Eye, EyeOff } from 'lucide-react'
+import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from '../contexts/ThemeContext'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { theme, toggleTheme, accessibilityMode, toggleAccessibility } = useTheme()
+  const { theme, toggleTheme } = useTheme()
   const location = useLocation()
 
   useEffect(() => {
@@ -79,18 +79,7 @@ const Header = () => {
               )}
             </button>
 
-            <button
-              onClick={toggleAccessibility}
-              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              aria-label={`${accessibilityMode ? 'Disable' : 'Enable'} accessibility mode`}
-              title="Toggle Accessibility Mode"
-            >
-              {accessibilityMode ? (
-                <EyeOff className="w-5 h-5" />
-              ) : (
-                <Eye className="w-5 h-5" />
-              )}
-            </button>
+
 
             {/* Mobile Menu Button */}
             <button

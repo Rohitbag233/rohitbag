@@ -16,11 +16,6 @@ export const ThemeProvider = ({ children }) => {
     return saved || 'light'
   })
 
-  const [accessibilityMode, setAccessibilityMode] = useState(() => {
-    const saved = localStorage.getItem('accessibilityMode')
-    return saved === 'true'
-  })
-
   useEffect(() => {
     const root = window.document.documentElement
     root.classList.remove('light', 'dark')
@@ -28,31 +23,15 @@ export const ThemeProvider = ({ children }) => {
     localStorage.setItem('theme', theme)
   }, [theme])
 
-  useEffect(() => {
-    const body = document.body
-    if (accessibilityMode) {
-      body.classList.add('accessibility-mode')
-    } else {
-      body.classList.remove('accessibility-mode')
-    }
-    localStorage.setItem('accessibilityMode', accessibilityMode.toString())
-  }, [accessibilityMode])
-
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light')
-  }
-
-  const toggleAccessibility = () => {
-    setAccessibilityMode(prev => !prev)
   }
 
   return (
     <ThemeContext.Provider value={{ 
       theme, 
       setTheme, 
-      toggleTheme, 
-      accessibilityMode, 
-      toggleAccessibility 
+      toggleTheme 
     }}>
       {children}
     </ThemeContext.Provider>
